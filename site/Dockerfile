@@ -7,7 +7,7 @@ FROM hugomods/hugo:exts as builder
 ARG HUGO_BASEURL=
 ENV HUGO_BASEURL=${HUGO_BASEURL}
 # Build site
-COPY ./site /src
+COPY . /src
 # Replace below build command at will.
 RUN hugo --minify --enableGitInfo
 # Set the fallback 404 page if defaultContentLanguageInSubdir is enabled,
