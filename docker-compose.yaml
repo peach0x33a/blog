@@ -1,0 +1,9 @@
+services:
+  server:
+    image: hugomods/hugo:exts-non-root
+    command: server -D
+    volumes:
+      - ./site:/src
+      - ~/hugo_cache:/tmp/hugo_cache
+    ports:
+      - 80:1313
