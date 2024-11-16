@@ -1,17 +1,18 @@
 ---
-title: {{ replace .File.ContentBaseName "-" " " | title }}
-date: {{ .Date }}
+title: "About"
+date: 2024-11-17T01:52:33+08:00
 # weight: 1
 # aliases: ["/first"]
-tags: [""]
+tags: ["About"]
 author: "Me"
+# author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: false
-description: "{{ replace .File.ContentBaseName "-" " " | title }}"
-disableHLJS: true # to disable highlightjs
+description: "About ME"
+canonicalURL: "https://canonical.url/to/page"
 disableShare: true
 disableHLJS: false
 hideSummary: false
@@ -30,6 +31,6 @@ cover:
     hidden: true # only hide on current single page
 ---
 
-## 前言
+## 自我介绍
 
-## 正文
+我是一个人。

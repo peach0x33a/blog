@@ -1,6 +1,7 @@
-[submodule "site/themes/themes/PaperMod"]
-	path = site/themes/themes/PaperMod
-	url = https://github.com/adityatelange/hugo-PaperMod.git
 [submodule "site/themes/PaperMod"]
 	path = site/themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+
+[submodule "site/content/posts/git"]
+	path = site/content/posts/git
+	url = https://git.mihari.top/safeluren/posts.git
