@@ -5,3 +5,9 @@
 [submodule "site/content/posts/git"]
 	path = site/content/posts/git
 	url = https://git.mihari.top/safeluren/posts.git
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "content/posts/git"]
+	path = content/posts/git
+	url = https://git.mihari.top/safeluren/posts.git
