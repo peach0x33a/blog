@@ -15,11 +15,11 @@ description: "About ME"
 canonicalURL: "https://canonical.url/to/page"
 disableShare: true
 disableHLJS: false
-hideSummary: false
+hideSummary: true
 searchHidden: true
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+ShowReadingTime: false
+ShowBreadCrumbs: false
+ShowPostNavLinks: false
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
