@@ -1,25 +1,29 @@
 {{- define "main" }}
 <style type="text/css">
+  .text {
+    font-size: 40px;
+  }
 
-.p {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 30%; /* 距离页面底部10%，可根据需要调整 */
+  .not-found {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-}
+    flex-direction: column;
+  }
 
+  .return {
+    font-size: 30px;
+  }
 </style>
 
 <div>
   <div class="not-found">
     <p>404</p>
-    <img src="https://s21.ax1x.com/2024/11/17/pAR9n9H.png" style="max-width: 25%; height: 25%;">
+    <p class="text">页面去哪了呢?</p>
+
+    <img src="https://s21.ax1x.com/2025/06/11/pVk18Ej.webp" style="height: 10rem;margin-top: 4rem;">
+    <a href="/#" class="return">返回主页</a>
+    <!-- <img src="https://s21.ax1x.com/2024/11/17/pAR9n9H.png" style="height: 10rem;"> -->
   </div>
-  <p class="p">页面去哪了呢?</p>
+
   <!-- <img src="/img/404.webp" alt=""></img>   -->
 </div>
 

@@ -3,7 +3,7 @@
 baseURL: "https://blog.mihari.top/"
 title: Just Another Blog
 pagination.pagerSize: 5
-theme: [PaperMod]
+theme: ["PaperMod","hugo-admonitions"]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -27,9 +27,9 @@ languages:
       series: series
     menu:
       main:
-        - name: 搜索
-          url: search/
-          weight: 10
+        # - name: 搜索
+        #   url: search/
+        #   weight: 10
         - name: 标签
           url: tags/
           weight: 10
@@ -44,7 +44,7 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Just Another Blog"
-  author: neofabric
+  author: peach0x33a
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
@@ -79,13 +79,16 @@ params:
   homeInfoParams:
     Title: "Just Another Blog"
     Content: >
-      👋 欢迎来到我的博客
+      👋 欢迎来到我的博客<br>部分内容来自于互联网、朋友、群友。<br>Host on Cloudflare Pages
+
+      > [!Tip] 本博客默认读者有流畅访问 Github / Google 等网站的能力。
+
 
 
   socialIcons:
     - name: github
       title: My Github
-      url: "https://github.com/SAFEluren"
+      url: "https://github.com/peach0x33a"
 
 
   # label:
@@ -122,6 +125,9 @@ params:
 
 markup:
   goldmark:
+    parser:
+      attribute:
+        block: true
     renderer:
       unsafe: true
   highlight:

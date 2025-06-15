@@ -13,7 +13,6 @@ comments: false
 description: "{{ replace .File.ContentBaseName "-" " " | title }}"
 disableHLJS: true # to disable highlightjs
 disableShare: true
-disableHLJS: false
 hideSummary: false
 searchHidden: true
 ShowReadingTime: true
@@ -31,5 +30,10 @@ cover:
 ---
 
 ## 前言
+
+部分内容来自于互联网、朋友、群友。
+
+> [!Tip] 在编写博客的文章时，将默认读者有流畅访问 Github / Google 等网站的能力。
+
 
 ## 正文
