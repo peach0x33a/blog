@@ -1,0 +1,52 @@
+/* =========================================
+   1. 引入字体资源
+   ========================================= */
+
+/* 引入霞鹜文楷 (用于正文) */
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/style.css');
+
+/* 引入 JetBrains Mono (用于代码) */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+
+/* =========================================
+   2. 定义全局变量
+   ========================================= */
+:root {
+    /* 正文字体栈 */
+    --font-stack-body: "LXGW WenKai Screen", "PingFang SC", "Microsoft YaHei", sans-serif;
+    
+    /* 代码字体栈 */
+    --font-stack-code: "JetBrains Mono", monospace;
+}
+
+
+/* =========================================
+   3. 应用样式覆盖
+   ========================================= */
+
+/* --- 正文部分 --- */
+body, 
+h1, h2, h3, h4, h5, h6,
+.post-title, 
+.entry-title {
+    font-family: var(--font-stack-body) !important;
+}
+
+/* --- 代码部分 (你的需求) --- */
+code, 
+kbd, 
+pre, 
+samp,
+.highlight, /* Hugo 代码高亮块容器 */
+.highlight pre, 
+.highlight code {
+    font-family: var(--font-stack-code) !important;
+}
+
+/* 修正 PaperMod 可能对内联代码 (Inline Code) 的特殊设置 */
+:not(pre) > code {
+    font-family: var(--font-stack-code) !important;
+    /* 可选：如果你觉得内联代码太小，可以微调大小 */
+    /* font-size: 0.9em; */
+}

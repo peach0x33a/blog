@@ -3,7 +3,7 @@
 baseURL: "https://blog.mihari.top/"
 title: Just Another Blog
 pagination.pagerSize: 5
-theme: ["PaperMod","hugo-admonitions"]
+theme: ["LXWK","PaperMod","hugo-admonitions"]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true

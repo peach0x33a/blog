@@ -1,0 +1,4 @@
+{{ $style := resources.Get "css/main.css" }}
+{{ if $style }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
